@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projections</title>
+</head>
+<body>
+    <h1>Colton Sands World Projections</h1>
+    
+    <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
+    <p>To create the projections, I loaded the data into QGIS and then clicked on the EPSG and typed in my desired projection. I then applied it and saved the map via the print layout feature. If I were to want to save the data I would export the shp file as a geojson in the desired projection.</p>
+    
+    <h2>WGS84 Projection</h2>
+    <h3>This projection maintains directions and does an okay job at keeping shape. The shape does become distorted at the poles, and the area is also distorted. </h3>
+    <a href=".//maps/4326.png">
+    <img src=".//maps/4326.png" alt="WGS84" width='500px'>
+    </a>
+    <h2>Aitoff Projection</h2>
+    <h3>This projection does a good job of maintaining shape and area in a T shape from the center of the projection. I looked it up and found that it is azimuthal. Towards the corners, the shape and area become distorted, and the angles are messed up throughout. 
+    </h3>
+    <a href=".//maps/54043.png">
+    <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>Pseudo Mercator</h2>
+    <h3>This projection maintains direction and shape throughout. However, the area becomes messed up throughout, and the map seems to be horizontally compressed, causing the poles to appear higher than other projections.</h3>
+    <a href="./maps/3857.png">
+    <img src="./maps/3857.png" alt="Pseudo Mercator" width='500px'>
+    </a>
+    <h2>Sphere Winkel I</h2>
+    <h3>This projection does not perfectly maintain anything, but nothing is terribly distorted either. All distortions become worse the further from the center you go, especially vertically. </h3>
+    <a href="./maps/53018.png">
+    <img src="./maps/53018.png" alt="Sphere Winkel I" width='500px'>
+    </a>
+    <h2>World Equidistant Conic</h2>
+    <h3>Area and shape are very distorted in the southern hemisphere. The northern hemisphere is projected well, aside from the obvious directional changes. The title seems to suggest the distance is accurately represented, which seems to be true as all vertical lines look about the same length, however the horizontal lines are not.</h3>
+    <a href="./maps/54027.png">
+    <img src="./maps/54027.png" alt="World Equidistant Conic" width='500px'>
+    </a>
+    <h2>World Cylindrical Equal Area</h2>
+    <h3>As the title suggests, the area seems to be maintained well. Shape is distorted a lot, especially away from the equator where it gets squashed, for lack of a better word.</h3>
+    <a href="./maps/54034.png">
+    <img src="./maps/54034.png" alt="World Cylindrical Equal Area" width='500px'>
+    </a>
+    <h2>World Goode Homolosine Land</h2>
+    <h3>I had to do some research because given the image from QGISI was very confused by this projection. The map is actually supposed to be 4 separate sections, like an orange peel. This allows it to preserve the area. The way it is broken up causes most distortion to appear in the ocean, meaning the continents are fairly well preserved, as can be seen.</h3>
+    <a href="./maps/54052.png">
+    <img src="./maps/54052.png" alt="World Goode Homolosine Land" width='500px'>
+    </a>
+    <h2>North Pole Azimuthal Equidistant</h2>
+    <h3>This projection shows the Earth from a plane on the North Pole. Area and shape are well preserved in the northern hemisphere, and distortion becomes bad the further south you go. This is similar to the conic projection but it is a full sphere, rather than having a break.</h3>
+    <a href="./maps/102016.png">
+    <img src="./maps/102016.png" alt="North Pole Azimuthal Equidistant" width='500px'>
+    </a>
+    <h2>South Pole Azimuthal Equidistant</h2>
+    <h3>This projection is the inverse of the previous, with the plane being laid on the south pole. </h3>
+    <a href="./maps/102019.png">
+    <img src="./maps/102019.png" alt="South Pole Azimuthal Equidistant" width='500px'>
+    </a>
+    <p></p>
+    <h2>Data used for this project</h2>
+    <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
+</body>
+</html>
