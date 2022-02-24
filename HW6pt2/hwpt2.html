@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Homework 6 Part 2: Ratios and Categories</h1>
+    <h2>Colton Sands</h2>
+    <h3>This map shows a the amount of resource extraction workers per 1000 workers in each county. To create this ratio I used the field calculator, dividing the number of extraction workers by the number of total workers and then multiplying by 1000. I wanted to create this map to see how resource extraction was more important economically in certain counties.</h3>
+
+    <h4>Equal Counts:Equal counts seperates the data into categories that all contain an equal number of counties. This is good because it shows us which counties are below average, which have an average amount, and which have more than an average amount of extraction workers per 1000. It is not as good at showing outliers, as it lumps together counties with very different amounts of workers.</h4>
+    <a href="./hw6pt2_equalcounts.png"> 
+        <img src="./hw6pt2_equalcounts.png" alt="HW6EqCt" width="500px">
+        </a>
+
+    <h4>Equal Interval:Equal Interval divided the data up with even cuts. It is good as it shows the proportianal differnces in values, so a county with a lot of extraction workers will look very differnt than one with few extraction workers. It is not as good at finding small differnces in data. For example, in the map below many counties look like they have no extraction workers, because the outliers make the intervals too large to show differnces between the counties with less.</h4>
+    <a href="./hw6pt2_equalinterval.png"> 
+        <img src="./hw6pt2_equalinterval.png" alt="HW6EqInt" width="500px">
+        </a>
+
+    <h4>Natural Breaks:Natural breaks attempts to divide the data into groups by looking at the histogram created and finding breaks in the data. It does not do as good of job as equal interval at showing true proprtional differnces but it does the best at making sure the map shown finds a balance between representing outliers well and still showing differnces in the smaller values.</h4>
+    <a href="./hw6pt2_naturalbreaks.png"> 
+        <img src="./hw6pt2_naturalbreaks.png" alt="HW6NtBr" width="500px">
+        </a>
+
+    <h2>Data used for this project</h2>
+    <a href="./CleanedData2GH.csv">Link to cleaned CSV dataset</a>
+    <p></p>
+    <a href="./PaCounties_4326.geojson">Link to geoJSON</a>
+</body>
+</html>
