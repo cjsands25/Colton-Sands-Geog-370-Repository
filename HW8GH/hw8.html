@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 8</title>
+</head>
+<body>
+    <h1>Homework 8:Vector Geoproccessing </h1>
+    <h2>Colton Sands</h2>
+    <h2>To what extent are Centre County streams impacted by the presence of Coal Mines in the watershed?</h2>
+    <h3>The first geoproccessing method I used was intersection. I used this to isolate the watersheds that contained coal mines. I then used intersection again to isolate the streams that passed through these water sheds. I then used the tool Sum Line Length to create a polygon layer that had information on the total length of high quality and impaired streams in each water shed. I created a ratio that showed what percent of the streams were impaired, answering my question.</h3>
+
+    <a href="./HW8Map.png"> 
+        <img src="./HW8Map.png" alt="HW8Map" width="500px">
+        </a>
+
+    <h2>Data used for this project</h2>
+    <a href="https://newdata-padep-1.opendata.arcgis.com/datasets/PADEP-1::coal-mining-operation-discharge-point/explore?location=40.945618%2C-78.217977%2C8.82">Coal Mine Locations</a>
+    <p></p>
+    <a href="https://gisdata-centrecountygov.opendata.arcgis.com/datasets/CentreCountyGov::watersheds-2/explore?location=40.958353%2C-77.735662%2C10.00">Watersheds</a> 
+    <p></p>
+    <a href="https://gisdata-centrecountygov.opendata.arcgis.com/datasets/CentreCountyGov::ev-hq-streams-1/explore">High Quality Streams</a>
+    <p></p>
+    <a href="https://gisdata-centrecountygov.opendata.arcgis.com/datasets/CentreCountyGov::impaired-streams-1/explore">Impaired Streams</a>
+    <p></p>
+    <a href="https://www.seekpng.com/png/full/826-8262407_image-black-and-white-library-home-gilpin-county.png">Image Source</a>
+
+    <h2>Data Created</h2>
+    <a href="./CentreCoalMines.geojson">Centre County Coal Mines</a>
+    <p></p>
+    <a href="./HQ Streams.geojson">High Quality Streams in Watersheds</a>
+    <p></p>
+    <a href="./Impaired Streams.geojson">Impaired Streams in Watersheds</a>
+    <p></p>
+    <a href="./WatershedData.geojson">Watershed Polygons with Stream Data</a>
+
+
+
+
+
+</body>
+</html>
